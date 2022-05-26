@@ -28,4 +28,7 @@ inputEl.addEventListener("input", (event) => {
   return amount;
 });
 
-destroyBtn.addEventListener("click", () => (boxesEl.innerHTML = ""));
+destroyBtn.addEventListener("click", () => {
+  boxesEl.innerHTML = "";
+  inputEl.value = "";
+});
